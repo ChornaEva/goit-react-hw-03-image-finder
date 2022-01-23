@@ -1,8 +1,13 @@
 import React from 'react';
 
-const ImageGalleryItem = ({ imageURL }) => (
-  <li className="gallery-item">
-    <img src={imageURL} alt="" />
+const ImageGalleryItem = ({ imageURL, tags, toggleModal, largeImageURL }) => (
+  <li className="ImageGalleryItem">
+    <img
+      src={imageURL}
+      alt={tags}
+      className="ImageGalleryItem-image"
+      onClick={() => toggleModal(largeImageURL)}
+    />
   </li>
 );
 

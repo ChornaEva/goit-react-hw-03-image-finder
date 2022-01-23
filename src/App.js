@@ -1,8 +1,10 @@
 import './App.css';
+// import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import { Toaster } from 'react-hot-toast';
 import React, { Component } from 'react';
 import Searchbar from './components/Searchbar';
 import ImageGallery from './components/ImageGallery';
+import Modal from './components/Modal';
 
 class App extends Component {
   state = {
